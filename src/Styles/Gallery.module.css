@@ -1,0 +1,91 @@
+.contenedor {
+    padding: 0 30px;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.modal {
+    position: relative;
+    background-color: var(--color-medio);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 6rem;
+}
+
+.imgModal {
+    width: auto;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 5px;
+}
+
+.closeButtom{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background-color:  transparent;
+    color: var(--texto-claro);
+}
+
+.next{
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color:  transparent;
+    color: var(--texto-claro);
+}
+
+.previous{
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color:  transparent;
+    color: var(--texto-claro);
+}
+
+
+@media screen and (max-width: 768px){
+
+    .modal {
+        height: 80vh;
+    }
+    
+.next,
+.previous,
+.closeButtom {
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%);
+  }
+
+.closeButtom{
+    top: 16%;
+  }
+
+.next {
+    right: 3%;
+  }
+
+.previous {
+    left: 3%; 
+    }
+}
+ 

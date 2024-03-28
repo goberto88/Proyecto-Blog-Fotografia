@@ -1,0 +1,82 @@
+@import './index.css';
+.container{
+    background-image: url(../../public/images/2....jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.Form{
+    width: 28rem;
+    justify-content: center;
+}
+
+.label{
+    color: var(--texto-claro);
+    margin-top: .5rem;
+}
+
+
+.input:focus{
+    box-shadow:none;
+    border: grey;
+}
+
+.containerButton{
+    display: flex;
+    justify-content: center;
+}
+
+
+.button{
+    width: 8rem;
+    margin: 2rem;
+}
+
+.error{
+    color: rgb(251, 36, 36);
+    font-size: 13px;
+}
+
+@media screen and (max-width: 768px){
+.container{
+    height: 60rem;
+   }
+
+
+.label{
+    font-size: 13px;
+   }
+.input{
+    font-size: 13px;
+}
+.button{
+    font-size: 13px;
+    width: 6rem;
+}
+}
+
+@media screen and (max-width: 1023px){
+    .container{
+        height: 60rem;
+    }
+
+    .Form{
+        width: 30rem;
+        justify-content: center;
+    }
+
+    .input{
+        background-color: rgb(237, 237, 237);
+    }
+
+    .button{
+        width: 12rem;
+        margin: 3rem;
+        background-color: rgb(237, 237, 237);
+    }
+
+}

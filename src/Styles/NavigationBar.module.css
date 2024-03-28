@@ -1,0 +1,95 @@
+@import './index.css';
+
+.containerNavBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: var(--color-profundo);
+    height: 4.5rem;   
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.logo{
+    max-width: 4rem;
+    border-radius: 50%;
+}
+
+.navLink{
+    color: var(--texto-claro);
+    transition: font-size 0.2s;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    font-size: 1.4em;
+}
+
+.containerNavItem{
+    gap: 2rem;
+}
+
+.toggleButton {
+    display: none;
+}
+
+  
+ 
+  .menuIcon {
+    font-size: 20px; 
+    color: var(--texto-claro); 
+  }
+  
+
+@media screen and (max-width: 768px){
+    .logo{
+        max-width: 3rem;
+       
+    }
+
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+
+
+    .toggleButton {
+        display: block;
+        background-color: transparent;
+        border: none;
+      }
+
+    .menuContainer{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--color-profundo);
+        border-bottom-left-radius: 4px;
+    }
+
+    .containerNavItem{
+        gap: .3rem;
+    }
+
+    .navLink{
+        margin: 1rem;
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+}

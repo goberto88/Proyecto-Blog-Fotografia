@@ -1,0 +1,18 @@
+@import './normalize.css';
+
+:root{
+    --texto-primario: 20px;
+    --texto-serundario: 18px;
+    --texto-encabezado: 50px;
+    --texto-botones: 30px;
+    --color-profundo: #171717;
+    --color-medio: #3e3e3e;
+    --texto-claro: #E0E0E4;
+    --texto-rojo:#e4e0e0;
+  }
+
+  body{
+    font-family: 'Cormorant', serif;
+    background-color: var(--color-medio);
+    margin: 4.5rem 0 4.5rem 0;
+  }

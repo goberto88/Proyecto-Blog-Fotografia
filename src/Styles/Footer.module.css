@@ -1,0 +1,38 @@
+.footer{
+    display: flex;
+    justify-content: center; 
+    align-items: end; 
+    background-color: var(--color-profundo);
+    text-align: center;
+    width: 100%;
+    height: 4.5rem;
+}
+
+.row{
+    color: var(--texto-claro);
+    
+   
+}
+
+.col{
+    margin: 0 10px; 
+}
+
+.copy{
+    margin: 0 0 .5rem 0;
+    text-align: center;
+    color: var(--texto-claro);
+}
+
+
+.icon {
+    width: 20px;
+    margin: .5rem;
+    color: var(--texto-claro);
+    cursor: pointer;
+}
+
+
+.icon:hover {
+    transform: scale(1.4); 
+  }
